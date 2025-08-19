@@ -7,5 +7,15 @@
         <h2>Add Two Numbers</h2>
         <input id="num1" type="number" placeholder="Enter first number:">
         <input id="num2" type="number" placeholder="Enter second number:">
+        <button onclick="addnumbers()">Add</button>
+        <p id="result"></p>
+        <script>
+            function addnumbers(){
+                let a = parseInt(document.getElementById("num1").value);
+                let b = parseInt(document.getElementById("num2").value);
+                let sum = a + b;
+                document.getElementById("result").innerHTML = "sum = " + sum;
+            }
+        </script>
     </body>
 </html>
